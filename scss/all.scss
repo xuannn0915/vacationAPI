@@ -1,0 +1,226 @@
+header {
+    background-image: url(https://hexschool.github.io/JavaScript_HomeWork/assets/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .banner {
+        padding: 84px 0 104px 0;
+
+        .page-name {
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            margin-bottom: 96px;
+        }
+
+        #district {
+            appearance: none;
+            padding: 8px 20px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.7);
+            border: solid 3px white;
+            background-image: url("https://hexschool.github.io/JavaScript_HomeWork/assets/icons_down.png");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            @media (max-width:768px) {
+                flex-wrap: nowrap;
+                overflow: auto;
+            }
+        }
+
+        .hot-area {
+            top: 352px;
+            margin: 0 auto;
+
+            .hot {
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px 24px;
+                border-radius: 5px;
+
+                input {
+                    border: none;
+                    color: white;
+                    padding: 6px 32px;
+                    margin-left: 24px;
+                    border-radius: 5px;
+
+                    @media (max-width:1400px) {
+                        margin-bottom: 8px;
+                    }
+                    @media (max-width:768px) {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+
+        .purple {
+            background: #8A82CC;
+        }
+
+        .pink {
+            background: #FFA782;
+        }
+
+        .yellow {
+            background: #F5D005;
+        }
+
+        .blue {
+            background: #559AC8;
+        }
+    }
+}
+
+
+.line {
+
+    .line-bar {
+        margin-top: 133px;
+        border: 1px dashed #559AC8;
+
+        @media (max-width:1400px) {
+            margin-top: 170px;
+        }
+        @media (max-width:768px) {
+            margin-top: 133px;
+        }
+    }
+
+    .line-icon {
+        padding: 0 4px;
+        border: 1px solid #559AC8;
+        color: #559AC8;
+        background: white;
+    }
+
+}
+
+.content {
+    margin-top: 72px;
+
+    .content-title {
+        font-size: 36px;
+        color: #8A82CC;
+        font-weight: 300;
+        margin-bottom: 24px;
+    }
+
+    .content-list{
+        padding: 0;
+    }
+
+    .card {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 32px;
+
+        .card-img{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .card-top {
+            height: 155px;
+            padding: 16px 24px;
+            position: relative;
+
+            &::before{
+                content: "";
+                background-color:rgba(0, 0, 0, 0.25);
+                height: 155px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .title-district {
+                font-size: 16px;
+                z-index: 0;
+            }
+
+            .title-place {
+                margin: 0;
+                font-weight: 300;
+                font-size: 24px;
+                z-index: 1;
+            }
+        }
+
+        .card-bottom {
+            height: 50%;
+            padding: 16px;
+
+            ul {
+                padding: 0;
+            }
+
+            .info-item{
+                margin-bottom: 4px;
+
+                .open-time{
+                    margin: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    &::before{
+                        content: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png);
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center center;
+                        margin-right: 8px;
+                        vertical-align: sub;
+                    }
+                }
+                .address{
+                    margin: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    &::before{
+                        content: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png);
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center center;
+                        margin-right: 8px;
+                        vertical-align: sub;
+                    }
+                }
+                .tel{
+                    margin: 0;
+                    &::before{
+                        content: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png);
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center center;
+                        margin-right: 8px;
+                        padding-left: 4px;
+                        vertical-align: sub;
+                    }
+                }
+                .ticket{
+                    margin: 0;
+                    &::before{
+                        content: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_tag.png);
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center center;
+                        margin-right: 8px;
+                        vertical-align: sub;
+                    }
+                }
+            }
+        }
+
+    }
+}
