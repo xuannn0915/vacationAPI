@@ -121,6 +121,9 @@ header .banner .blue {
   padding: 16px 24px;
   position: relative;
 }
+.content .card .card-top:hover {
+  background-size: auto;
+}
 .content .card .card-top::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.25);
@@ -130,6 +133,9 @@ header .banner .blue {
   left: 0;
   height: 100%;
   width: 100%;
+}
+.content .card .card-top:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .content .card .card-top .title-district {
   font-size: 16px;

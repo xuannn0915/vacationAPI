@@ -132,6 +132,10 @@ header {
             height: 155px;
             padding: 16px 24px;
             position: relative;
+            
+            &:hover{
+                background-size: auto;
+            }
 
             &::before{
                 content: "";
@@ -142,6 +146,10 @@ header {
                 left: 0;
                 height: 100%;
                 width: 100%;
+            }
+
+            &:hover::before{
+                background-color:rgba(0, 0, 0, 0.5);
             }
 
             .title-district {
